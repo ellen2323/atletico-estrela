@@ -1,0 +1,219 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+.header {
+    background: linear-gradient(90deg, #0d47a1, #1976d2);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+body{
+    background-color: rgb(145, 155, 184);
+
+}
+
+.header .logo img {
+    height: 90px;
+}
+
+
+.banner {
+    background: url('images/torcida.jpg') no-repeat center center/cover;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.banner .overlay {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.match {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.match img {
+    height: 90px;
+}
+
+
+.fotos {
+    text-align: center;
+    padding: 50px 20px;
+    font-size: larger;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    width: 220px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+}
+
+
+.footer {
+    background: linear-gradient(90deg, #0d47a1, #1976d2);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.social a:hover {
+    color: #ffeb3b;
+}
+
+.patrocinadores img {
+    height: 50px;
+    margin: 10px;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+@media (max-width: 768px) {
+    .match {
+        flex-direction: column;
+    }
+    .galeria img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: url('images/banner.webp') no-repeat center center/cover;
+    color: white;
+    padding: 2rem 0;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.match img {
+    max-width: 100px;
+    height: auto;
+}
+
+.fotos {
+    text-align: center;
+    padding: 2rem;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.galeria img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.social a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.patrocinadores img {
+    max-width: 300px;
+    height: auto;
+}
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+    
+    .galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay {
+        padding: 1rem;
+    }
+    
+    .match img {
+        max-width: 70px;
+    }
+    
+    .patrocinadores img {
+        max-width: 80px;
+    }
+}
